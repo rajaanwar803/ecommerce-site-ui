@@ -11,14 +11,14 @@ export default function Header() {
   return (
     <>
       <header className=" w-full">
-        <div className="flex items-center place-content-between my-8 mx-32 ">
+        <div className="flex items-center place-content-between my-8 mx-8 sm:my-8 sm:mx-32">
           <div className="w-36 h-8">
             <Image width={500} height={500} src={"/logo.webp"} alt="logo" />
           </div>
-          <div className="hidden md:flex  items-center">
+          <div className="hidden lg:flex  items-center">
             <Navbar />
           </div>
-          <div className="hidden md:flex border items-center rounded-lg h-8 relative ">
+          <div className="hidden lg:flex border items-center rounded-lg h-8 relative ">
             <Search className="absolute p-1" />
             <Input
               type="search"
@@ -26,7 +26,7 @@ export default function Header() {
               placeholder="What you looking for"
             />
           </div>
-          <div className="hidden md:flex bg-gray-100 rounded-full p-3 hover:scale-125 duration-300 transition-all relative">
+          <div className="hidden lg:flex bg-gray-100 rounded-full p-3 hover:scale-125 duration-300 transition-all relative">
             <ShoppingCart size={24} />
             <div
               className="bg-red-500 text-white text-xs rounded-full mx-2 px-1
@@ -36,15 +36,15 @@ export default function Header() {
             </div>
           </div>
           {!toggle ? (
-            <Menu className="md:hidden" onClick={() => setToggle(true)} />
+            <Menu className="lg:hidden" onClick={() => setToggle(true)} />
           ) : (
-            <X className="md:hidden" onClick={() => setToggle(false)} />
+            <X className="lg:hidden" onClick={() => setToggle(false)} />
           )}
         </div>
 
         {/* Mobile */}
         {toggle && (
-          <div className="flex flex-col justify-center items-center md:hidden space-y-6">
+          <div className="flex flex-col justify-center items-center lg:hidden space-y-6">
             <div className="bg-gray-100 rounded-full p-3 hover:scale-125 duration-300 transition-all relative">
               <ShoppingCart size={24} />
               <div
