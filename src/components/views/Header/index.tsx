@@ -11,13 +11,13 @@ export default function Header() {
   return (
     <>
       <header className=" w-full">
-        <div className="flex items-center place-content-between my-8 mx-8 sm:my-8 sm:mx-32">
-          <div className="w-36 h-8">
+        <div className="flex items-center place-content-between mx-8 sm:mx-24 xl:mx-32 my-8">
+          <div className="w-36 h-8 ">
             <Image width={500} height={500} src={"/logo.webp"} alt="logo" />
           </div>
-          <div className="hidden lg:flex  items-center">
+          <nav className="hidden lg:flex  items-center">
             <Navbar />
-          </div>
+          </nav>
           <div className="hidden lg:flex border items-center rounded-lg h-8 relative ">
             <Search className="absolute p-1" />
             <Input
@@ -61,7 +61,7 @@ export default function Header() {
               <Search className="absolute p-1" />
               <Input
                 type="search"
-                className="w-60 pl-8 h-8 border-gray-500 "
+                className="pl-8 h-8 border-gray-500 "
                 placeholder="What you looking for"
               />
             </div>

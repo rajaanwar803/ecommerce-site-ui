@@ -19,29 +19,29 @@ export default function Nabar(props:any) {
       <NavigationMenu>
         <NavigationMenuList className={props.mobile}>
           <NavigationMenuItem>
-            <Link href="/female" legacyBehavior passHref>
-              <NavigationMenuLink className= {`text-lg ${navigationMenuTriggerStyle()}`}>
+            <Link href="/female" legacyBehavior passHref >
+              <NavigationMenuLink className= {`${navigationMenuTriggerStyle()}`}>
                 Female
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/female" legacyBehavior passHref>
-              <NavigationMenuLink className={`text-lg ${navigationMenuTriggerStyle()}`}>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
                 Male
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/male" legacyBehavior passHref>
-              <NavigationMenuLink className={`text-lg ${navigationMenuTriggerStyle()}`}>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
                 Kids
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/all" legacyBehavior passHref>
-              <NavigationMenuLink className={`text-lg ${navigationMenuTriggerStyle()}`}>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
                 All Products
               </NavigationMenuLink>
             </Link>
