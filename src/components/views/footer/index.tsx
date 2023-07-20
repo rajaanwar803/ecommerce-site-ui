@@ -1,14 +1,19 @@
 import Image from "next/image";
 import { FaTwitter, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <>
       <footer className="w-full">
-        <div className="flex items-center justify-center mx-8 sm:mx-24 xl:mx-32 my-16 space-x-24">
+        <div className="flex flex-col lg:flex-row mx-8 sm:mx-24 xl:mx-32 my-16 space-x-0 lg:space-x-24 space-y-4 lg:space-y-0">
+          {/* Logo Div */}
           <div className="h-56 space-y-8">
+            {/* Logo */}
             <div className="w-44 h-8">
-              <Image src={"/logo.webp"} width={500} height={500} alt="logo" />
+              <Link href={"/"}>
+                <Image src={"/logo.webp"} width={500} height={500} alt="logo" />
+              </Link>
             </div>
             <div>
               <p className="text-base text-gray-500">
@@ -16,6 +21,8 @@ export default function Footer() {
                 collection of high quality everyday essentials made.
               </p>
             </div>
+
+            {/* Social Links */}
             <div className="flex space-x-4 h-12">
               <div className="bg-gray-100 p-4 rounded-lg">
                 <FaTwitter size={20} />
@@ -29,10 +36,11 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex h-56 text-gray-500">
-            <div className=" w-60 space-y-5">
+          <div className="flex flex-col lg:flex-row h-56 text-gray-500 space-y-8 lg:space-y-0">
+            {/* Company Links */}
+            <div className=" w-60 space-y-4">
               <h3 className="font-bold text-lg text-gray-500">Company</h3>
-              <div className="space-y-3">
+              <div className="space-y-3 ">
                 <p className="">About</p>
                 <p className="">Terms of Use</p>
                 <p className="">Privacy Policy</p>
@@ -41,7 +49,8 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="w-60 space-y-5">
+            {/* Support Links */}
+            <div className="w-60 space-y-4">
               <h3 className="font-bold text-lg text-gray-500">Support</h3>
               <div className="space-y-3">
                 <p className="">Support Career</p>
@@ -49,7 +58,9 @@ export default function Footer() {
                 <p className="">Quick Chat</p>
               </div>
             </div>
-            <div className="w-60 space-y-5">
+
+            {/* Contact Links */}
+            <div className="w-60 space-y-4">
               <h3 className="font-bold text-lg text-gray-500">Contact</h3>
               <div className="space-y-3">
                 <p className="">Whatsapp</p>
