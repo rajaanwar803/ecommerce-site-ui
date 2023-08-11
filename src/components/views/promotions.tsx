@@ -12,12 +12,12 @@ import {
 export default function PromotionsWithFlex() {
   return (
     <>
-      <section className="mx-8 sm:mx-24 xl:mx-32 my-16 py-16">
+      <section className="px-8 sm:px-24 xl:px-32 py-6 sm:py-8 xl:py-16">
         <div className="space-y-4 mb-8">
           <span className="block text-center text-xs uppercase font-bold text-blue-600 tracking-widest">
             Promotions
           </span>
-          <h2 className="text-center font-bold uppercase text-[28px] md:text-3xl tracking-wide ">
+          <h2 className="text-center font-bold uppercase text-2xl sm:text-3xl tracking-wide ">
             Our Promotions Events
           </h2>
         </div>

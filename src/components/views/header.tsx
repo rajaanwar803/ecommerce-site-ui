@@ -10,7 +10,7 @@ export default function Header() {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <header className=" w-full">
+      <header className=" w-full sticky top-0 z-10 bg-white">
         <div className="flex items-center place-content-between mx-8 sm:mx-24 xl:mx-32 my-8">
           {/* Logo */}
           <div className="w-36 h-8 ">

@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <>
-      <div className="flex mx-8 sm:mx-24 xl:mx-32 my-16 relative gap-16 ">
+      <div className="flex mx-8 sm:mx-24 xl:mx-32 my-4 sm:my-8 xl:my-16 relative gap-16 ">
         <div className="w-full xl:w-3/5 pt-12 pb-4  space-y-10">
           <div className="space-y-10">
             <Badge
@@ -16,7 +16,7 @@ export default function Hero() {
               Sale 70%
             </Badge>
             <div>
-              <h1 className="text-6xl font-bold tracking-wide">
+              <h1 className="text-5xl sm:text-5xl font-bold tracking-wide">
                 An Industrial Take on Streetwear
               </h1>
             </div>
